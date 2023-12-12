@@ -1,0 +1,80 @@
+JAVASCRIPT  // ES6
+
+// -------------------------------- //
+
+Quand on va commencer React, ce sera plus du Live Coding.
+
+Les boites de dialogues : les alerts, et les prompts.
+
+
+Le switch case est souvent utilisé pour le système de routing, comme on connait précisemment les urls
+    + break // try .. catch
+
+Portée des variables: locales (dans les fonctions), globales (variable décalarée à l'extérieur des fonctions)
+
+
+ES6 qui est un socle commun car cette version est compatible avec tous les navigateurs.
+
+DOM : Document Object Model
+
+Standard du W3C décrivant l'architecture d'une page XML ou XHTML
+Le DOM est une structure de programmation qui est orientée objet -> concept de prototype
+(les class sont arrivée en 2015), 
+Le JS permet de modifier dynamiquement le DOM (structure et contenu de la page)
+
+Avant chaque navigateur avait son propre DOM, ses propres méthodes, ..
+
+Le DOM est crée au chargement de la page, DOMContentLoaded, pour éviter de rencontrer des erreurs concernant le chargement de la page
+et ainsi de la création du DOM.
+
+
+Il y a 12 types de noeuds différents mais 3 principaux : l'element, le texte, le style
+
+
+
+
+XML -> les flux RSS qui sont des récupérations de fichiers xml, on peut récupérer ces flux avec l'aide d'agrégateurs RSS
+API REST -> sans état : obligé de s'authentifier pour réaliser chaque action
+
+
+Les erreurs communes en JS :
+    - éviter les erreurs dans la console pendant l'examen
+    - mettre en place des tests (Test Drive Development)
+
+this : fait référence à l'objet actuel dans un contexte d'objet, sinon fait référence à un l'élément dans le contexte où il est appelé
+
+Persistance des données : garder les données côté client.
+Les cookies permettent de stocker de l'information 
+Quelques points négatifs : Stockage en clair, accessible par le serveur, .. 
+
+localStorage, session :
+Stocker par le navigateur et pas accessilble par le serveur.
+
+
+AJAX (Asynchronous Javascript And XML) : permet de réaliser des requêtes HTTP (toutes les actions du CRUD) asynchrones sans recharger la page.
+Utilisé pour récupérer des données API par exemple.
+Historiquement XMLHttpRequest ou objet XHR
+Associé à un système de try ... catch.
+
+
+Les Promesses : 
+Notion liée à l'asynchrone.
+Quand on travaille en asynchrone, il y a forcément un moment où l'on attend une réponse.
+Quand une fonction Asynchrone retourne une valeur, elle peut forcément avoir 3 états : Pending (en cours), Reject (échec du résultat de la promesse), Fulfilled(succès)
+const myPromise = new Promise((resolve, reject) => { // traitement asynchrone });
+
+Ensuite un chaine avect .then() et .catch()
+
+
+Les fonctions asynchrones:
+Les fonctions async peuvent contenir des await sur des promesses.
+Le code sera utilisé de façon non bloquante en attendant les promesses.
+
+async function getUsers() {
+    var response = await fetch("/users")
+}
+
+
+    + important de traiter les erreurs avec des blocs try() / catch() et .then() / .catch()
+
+
