@@ -6,3 +6,25 @@ ul, li {
     margin: 0;
     padding: 0;
 }
+
+
+.response {
+    color: black;
+    transition: 0.3s;
+}
+
+.response:hover {
+    background-color: #3e8e41 !important;
+    color: white;
+}
+
+.selected {
+    background-color: #3e8e41 !important;
+    color: white;
+}
+
+
+
+.btn#results {
+    display: none;
+}
