@@ -9,12 +9,12 @@
 </head>
 <body class="container">
     <header>
-        <h1 class="mx-auto">Mon Quiz</h1>
+        <h1 class="d-flex align-items-center justify-content-center">Mon Quiz</h1>
     </header>
     <main>
         <section class="row">
-            <div>
-                <h2>Question n° :<span id="questionTitle"></span></h2>
+            <div class="d-flex align-items-center justify-content-center">
+                <h2 class="">Question : <span id="questionTitle"></span></h2>
             </div>
             <div>
                 <p>Réponses :</p>
@@ -27,6 +27,10 @@
         
         <button id="next" data-question="" class="btn btn-primary" type="button">Question Suivante</button>
         <button id="results" class="btn btn-danger">Voir vos résultats</button>
+        <div id="resultsContainer">
+            <ul id="resultsList"></ul>
+            
+        </div>
     </main>
 
 
